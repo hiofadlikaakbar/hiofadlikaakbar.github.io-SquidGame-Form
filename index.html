@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey form</title>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1 id="title">Survey form</h1>
+	<p id="description">Isi formulirnya</p>
+
+	<form id="survey-form">
+		<label for="name" id="name-label">
+			Name
+			<input type="text" id="name" placeholder="enter your name" required>
+		</label>
+
+		<label for="email" id="email-label">
+			Email
+			<input type="email" id="email" placeholder="enter your email" required>
+		</label>
+
+
+		<label for="number" id="number-label">
+			Age
+			<input type="number" id="number" placeholder="How old are you?" min="20" max="70">
+		</label>
+
+
+		<label for="games" id="dropdown-label">
+			Choose you favorite games?
+		<select id="dropdown">
+			<option>Tug of war</option>
+			<option>Glass stepping stone</option>
+			<option>Marbles</option>
+			<option>Red Light Green Light</option>
+			<option>Squid Game</option>
+		</select>
+		</label>
+
+
+		<label for="chara" id="chara-label">
+			Choose you favorite characters?</label>
+		<input type="radio" name="hero" value="1" checked>Seong Gi-hun <br>
+		<input type="radio" name="hero"value="2">Cho Sang-woo <br>
+		<input type="radio" name="hero"value="3">Kang Sae-byeok <br>
+		<input type="radio" name="hero"value="4">Oh Il-nam <br>
+		<input type="radio" name="hero"value="5">Jang Deok-su <br>
+		<input type="radio" name="hero"value="6">Han Mi-nyeo <br>
+		<input type="radio" name="hero"value="7">Ali Abdul <br>
+		<input type="radio" name="hero"value="8">Ji-yeong <br>
+		<input type="radio" name="hero"value="9">Byeong-ki <br>
+
+
+		<br><br>
+			<label for="hated" id="hated-label">
+			which characters do you hate?</label>
+		<input type="checkbox" value="guards" name="hero">The Guards <br>
+		<input type="checkbox" value="front-man" name="hero">Front man <br>
+		<input type="checkbox" value="Jang-Deok-su" name="hero">Jang Deok-su <br>
+		<input type="checkbox" value="etc" name="hero">Etc <br>
+
+
+		<br><br>
+		<label for="comments" id="comments-label">
+			Any comments or suggestions?
+		<textarea name="comments" cols="30" rows="10"></textarea>
+		</label>
+
+		<button id="submit" id="submit">Submit</button>
+	</form>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>	
+</body>
+</html>
+
